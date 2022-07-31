@@ -79,5 +79,51 @@
                         Consequatur hic, repellendus ipsam quos aliquid totam quasi officia ut itaque est?</p>
     </div>
 </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <button #button class="SubmitButton tabletem my-3"  [attr.data-buttonvalue]="showTable" (click)="ExtractTables(button)">Extract Tables</button>
+    
+    How to Get attr and data set in angular
+    
+     ExtractTables(Condition:any){
+    let ButtonValue = Condition.getAttribute('data-buttonvalue');
+    this.showTable = !(this.showTable);
+    if(ButtonValue ===  false){
+      console.log('Hit Api');
+      return
+    }
+    if(ButtonValue === true){
+      console.log('')
+    }
+  }
 
 </html>
